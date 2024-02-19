@@ -1,7 +1,7 @@
 import Sidebar from '@/components/shared/Sidebar'
 import React from 'react'
 
-const Layout = ({children} : {childern: React.ReactNode}) => {
+const Layout = ({children} : {children: React.ReactNode}) => {
   return (
     <main className='root'>
       <Sidebar/>
