@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { ReactNode } from 'react';
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <main className="auth">{children}</main>
-  )
+interface LayoutProps {
+  children: ReactNode;
 }
 
-export default Layout
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  // コンポーネントのロジック
+  return <div>{children}</div>;
+};
+
+export default Layout;
